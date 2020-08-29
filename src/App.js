@@ -8,6 +8,7 @@ import Navigation from "./components/navigation/Navigation";
 import Nomatch from "./components/nomatch/Nomatch";
 
 import getTodo from "./services/todoService";
+import Jeopardy from "./components/jeopardy/Jeopardy";
 
 getTodo(1);
 
@@ -30,6 +31,7 @@ function App() {
         />
         <Route path="/clock" component={Clock} />
         <Route path="/contact" component={Contact} />
+        <Route path="/jeopardy" component={Jeopardy} />
         <Route component={Nomatch} />
       </Switch>
     </div>
